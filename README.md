@@ -1,6 +1,33 @@
 # linux_permissions
 This repo describes linux permissions
 
+# How to use this repo
+
+ - Clone this repo
+ 
+ `git clone git@github.com:yordanivh/linux_permissions.git`
+ 
+ - start a vagrant VM
+ 
+ ```
+ vangrant up
+ 
+ ```
+ 
+ - login to the vagrant machine
+ 
+ ```
+ vagrant ssh
+ ```
+ 
+ - the contents of the repo will be located in `/vagrant`
+ 
+ - In order to compile a C program into a binary executable do:
+ 
+ ```
+ gcc uid.c -o myuid
+ gcc gid.c -o mygid
+ ```
 
 # What are the default permissions for a file and directory
 
@@ -9,6 +36,7 @@ Default permission for a directory is 0777, for files the permissions are 0666 f
 # How to see the defaults
 
 To see the default permissions you can initiate the `umask` command
+
 ```
 vagrant@vagrant:~$ umask
 0002
