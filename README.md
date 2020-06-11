@@ -44,10 +44,11 @@ The new default permissions will be the umask subtracted from 0666(-rw-rw-rw) fo
 -----
 0644(rw-r--r--)
 ```
-
+```
 vagrant@vagrant:~$ touch newfile
 vagrant@vagrant:~$ ls -la newfile
 -rw-r--r-- 1 vagrant vagrant 0 Jun 11 07:50 newfile
+```
 
 # Extended permissions - what are they, when do you need them, how they work
 
