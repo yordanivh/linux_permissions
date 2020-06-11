@@ -16,12 +16,13 @@ vagrant@vagrant:~$ umask
 
 The mask is subtracted from the default file permission 0666 and default directory permissions 0777 to get the actual current default permissions for newly created files
 
+```
 0666
 -
 0002
 -----
 0664(rw-rw-r--)
-
+```
 
 # How to change the defaults 
 
@@ -36,11 +37,13 @@ vagrant@vagrant:~$ umask
 ```
 The new default permissions will be the umask subtracted from 0666(-rw-rw-rw) for files or from 0777(drwxrwxrwx) for directories
 
+```
 0666
 -
 0022
 -----
 0644(rw-r--r--)
+```
 
 vagrant@vagrant:~$ touch newfile
 vagrant@vagrant:~$ ls -la newfile
